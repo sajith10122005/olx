@@ -22,7 +22,7 @@ function PostProduct({ addProduct, user }) {
 
   const handleSubmit = (e) => {
   e.preventDefault();
-  addProduct({ ...formData, user }); 
+  addProduct({ ...formData, user: user.email }); 
   navigate("/");
 };
 

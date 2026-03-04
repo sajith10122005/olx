@@ -19,7 +19,7 @@ function Home({ products, search, setSearch, category, setCategory, user, delete
       <span style={{ marginRight: "15px" }}>Hello, {user.email}</span>
       <button
         className="login-btn"
-        onClick={() => setUser(null)} // Logout
+        onClick={() => setUser(null)} 
       >
         Logout
       </button>
@@ -27,7 +27,7 @@ function Home({ products, search, setSearch, category, setCategory, user, delete
   ) : (
     <button
       className="login-btn"
-      onClick={() => navigate("/")} // Redirect to AuthPage
+      onClick={() => navigate("/")} 
     >
       Login
     </button>
